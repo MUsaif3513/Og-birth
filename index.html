@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birth Certificate Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="certificate-container" id="certificate">
+    <h2>GOVERNMENT OF MAHARASHTRA</h2>
+    <h3>MEDICAL COLLEGE HOSPITAL AURANGABAD</h3>
+    <h4>BIRTH CERTIFICATE</h4>
+    <p><strong>NAME:</strong> <span id="name">[Name]</span></p>
+    <p><strong>DATE OF BIRTH:</strong> <span id="dob">[DOB]</span></p>
+    <p><strong>MOTHER'S NAME:</strong> <span id="mother">[Mother's Name]</span></p>
+    <p><strong>FATHER'S NAME:</strong> <span id="father">[Father's Name]</span></p>
+    <p><strong>PLACE OF BIRTH:</strong> <span id="place">[Place of Birth]</span></p>
+  </div>
+
+  <div class="form-container">
+    <input type="text" id="inputName" placeholder="Name" />
+    <input type="text" id="inputDOB" placeholder="Date of Birth" />
+    <input type="text" id="inputMother" placeholder="Mother's Name" />
+    <input type="text" id="inputFather" placeholder="Father's Name" />
+    <input type="text" id="inputPlace" placeholder="Place of Birth" />
+    <button onclick="generateCertificate()">Generate Certificate</button>
+  </div>
+
+  <script src="html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
